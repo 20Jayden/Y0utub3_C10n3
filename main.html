@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>너튜브</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="icon/favicon.ico">
+
+    <!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]> 
+        <script src="js/html5shiv.min.js"></script>
+        <script type="text/javascript">
+            alert("현재 당신이 보는 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트해주세요!");
+        </script>
+    <![endif]-->
+
+    <script>
+       function menuToggle() {
+         var menu1 = document.getElementById("menu1");
+         var menu2 = document.getElementById("menu2");
+         if (menu1.style.display === "inline") {
+           menu1.style.display = "none";
+           menu2.style.display = "inline";
+         } else {
+           menu1.style.display = "inline";
+           menu2.style.display = "none";
+         }
+        }
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 헤더 -->
+        <header class="header_nav">
+                <div class="left">
+                    <button type="button" onclick="menuToggle()" data-animation="ripple">
+                        <img src="icon/menu_icon.png">
+                    </button>
+                    <a href="#"></a>
+                </div>
+                <div class="center">
+                    <div class="form-item">
+                        <input type="text" class="search-bar" placeholder="검색"><button type="button"></button>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <button type="button" data-animation="ripple">
+                        <span class="login_img"></span>
+                        <p>로그인</p>
+                    </button>
+                </div>
+        </header>
+        <aside class="aside_menu1" id="menu1">
+            <div class="content_menu">
+                <div class="cotnent_menu1">
+                    <!-- 홈 메뉴-->
+                    <a href="/" class="menu1_home">
+                        <i class="icon"><img src="icon/home.png"></i>
+                        <span class="title">홈</span>
+                    </a>
+                    <!-- 인기 메뉴-->
+                    <a href="/" class="menu1_trnd">
+                        <i class="icon"><img src="icon/trend.png"></i>
+                        <span class="title">인기</span>
+                    </a>
+                    <!-- 구독 메뉴-->
+                    <a href="/" class="menu1_subc">
+                        <i class="icon"><img src="icon/sub.png"></i>
+                        <span class="title">구독</span>
+                    </a>
+                </div>
+                <hr class="line">
+                <!-- 보관한 메뉴-->
+                <a href="/" class="menu1_libr">
+                    <i class="icon"><img src="icon/lib.png"></i>
+                    <span class="title">보관함</span>
+                </a>
+                <!-- 시청 기록 메뉴-->
+                <a href="/" class="menu1_hist">
+                    <i class="icon"><img src="icon/his.png"></i>
+                    <span class="title">시청 기록</span>
+                </a>
+            </div>
+        </aside>
+        <aside class="aside_menu2" id="menu2">
+            <div class="content_menu">
+                <!-- 홈 메뉴-->
+                <a href="/" class="menu2_home">
+                    <i class="icon"><img src="icon/home.png"></i>
+                    <span class="title" id="selected">홈</span>
+                </a>
+                <!-- 인기 메뉴-->
+                <a href="/" class="menu2_trnd">
+                    <i class="icon"><img src="icon/trend.png"></i>
+                    <span class="title">인기</span>
+                </a>
+                <!-- 구독 메뉴-->
+                <a href="/" class="menu2_subc">
+                    <i class="icon"><img src="icon/sub.png"></i>
+                    <span class="title">구독</span>
+                </a>
+                <!-- 보관한 메뉴-->
+                <a href="/" class="menu2_libr">
+                    <i class="icon"><img src="icon/lib.png"></i>
+                    <span class="title">보관함</span>
+                </a>
+                <!-- 시청 기록 메뉴-->
+                <a href="/" class="menu2_hist">
+                    <i class="icon"><img src="icon/his.png"></i>
+                    <span class="title">시청 기록</span>
+                </a>
+            </div>
+        </aside>
+        <section class="section_board">
+            <div class="page_manager">
+                <div class="contents">
+                    <div class="media">
+                        <div></div>
+                    </div>
+                    <div class="media"></div>
+                    <div class="media"></div>
+                    <div class="media"></div>
+                    <div class="media"></div>
+                    <div class="media"></div>
+                    <div class="media"></div>
+                    <div class="media"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="js/jquery.min_1.12.4.js"></script>
+    <script src="js/click_animation.js"></script>
+</body>
+</html>
