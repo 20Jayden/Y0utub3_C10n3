@@ -96,7 +96,6 @@ button{
     display:flex;
     border: 1px solid #065FD4;
     background-color: #FFFFFF;
-    float:left;
     padding: 9px 10px 9px 10px;
     height: 44px;
     cursor: pointer;
@@ -175,7 +174,6 @@ button{
     font-size: 0.87rem;
     display:flex;
     align-items: center;
-    float:left;
 }
 
 .aside_menu1 .content_menu a:hover{
@@ -228,7 +226,6 @@ button{
     display:flex;
     border: 1px solid #065FD4;
     background-color: #FFFFFF;
-    float:left;
     margin-top: 11px;
     padding: 4px 10px 9px 9px;
     height: 34px;
