@@ -23,12 +23,15 @@
        function menuToggle() {
          var menu1 = document.getElementById("menu1");
          var menu2 = document.getElementById("menu2");
+
          if (menu1.style.display === "inline") {
            menu1.style.display = "none";
            menu2.style.display = "inline";
+           document.getElementById("page_manager").style.marginLeft = "100px";
          } else {
            menu1.style.display = "inline";
            menu2.style.display = "none";
+           document.getElementById("page_manager").style.marginLeft = "265px";
          }
         }
     </script>
@@ -48,9 +51,18 @@
                         <input type="text" class="search-bar" placeholder="검색"><button type="button"></button>
                     </div>
                 </div>
-
+                
                 <div class="right">
-                    <button type="button" data-animation="ripple">
+                    <button type="button" class="create border" data-animation="ripple">
+                        <img src="icon/create.PNG">
+                    </button>
+                    <button type="button" class="app border" data-animation="ripple">
+                        <img src="icon/app.PNG">
+                    </button>
+                    <button type="button" class="edit border" data-animation="ripple">
+                        <img src="icon/edit.PNG">
+                    </button>
+                    <button type="button" class="login-button"data-animation="ripple">
                         <span class="login_img"></span>
                         <p>로그인</p>
                     </button>
@@ -58,71 +70,114 @@
         </header>
         <aside class="aside_menu1" id="menu1">
             <div class="content_menu">
-                <div class="cotnent_menu1">
+                <div class="menu_border">
                     <!-- 홈 메뉴-->
-                    <a href="/" class="menu1_home">
+                    <a href="#" class="menu1_home">
                         <i class="icon"><img src="icon/home.png"></i>
                         <span class="title">홈</span>
                     </a>
                     <!-- 인기 메뉴-->
-                    <a href="/" class="menu1_trnd">
+                    <a href="#" class="menu1_trnd">
                         <i class="icon"><img src="icon/trend.png"></i>
                         <span class="title">인기</span>
                     </a>
                     <!-- 구독 메뉴-->
-                    <a href="/" class="menu1_subc">
+                    <a href="#" class="menu1_subc">
                         <i class="icon"><img src="icon/sub.png"></i>
                         <span class="title">구독</span>
                     </a>
                 </div>
-                <hr class="line">
-                <!-- 보관한 메뉴-->
-                <a href="/" class="menu1_libr">
-                    <i class="icon"><img src="icon/lib.png"></i>
-                    <span class="title">보관함</span>
-                </a>
-                <!-- 시청 기록 메뉴-->
-                <a href="/" class="menu1_hist">
-                    <i class="icon"><img src="icon/his.png"></i>
-                    <span class="title">시청 기록</span>
-                </a>
+                <div class="menu_border">
+                    <!-- 보관한 메뉴-->
+                    <a href="#" class="menu1_libr">
+                        <i class="icon"><img src="icon/lib.png"></i>
+                        <span class="title">보관함</span>
+                    </a>
+                    <!-- 시청 기록 메뉴-->
+                    <a href="#" class="menu1_hist">
+                        <i class="icon"><img src="icon/his.png"></i>
+                        <span class="title">시청 기록</span>
+                    </a>
+                </div>
+
+                <div class="login_content menu_border">
+                    <p>로그인하면 동영상에 좋아요를 표시하고 댓글을 달거나 구독할 수 있습니다.</p>
+                    <button type="button" class="login-button"data-animation="ripple">
+                        <span class="login_img"></span>
+                        <p>로그인</p>
+                    </button>
+                </div>
+
+                <div class="trend_content menu_border">
+                    <p class="trend_title">인기 YouTube</p>
+                    <a href="#" class="menu1_music">
+                        <i class="icon"><img src="icon/music.PNG"></i>
+                        <span class="title">음악</span>
+                    </a>
+                    <a href="#" class="menu1_sports">
+                        <i class="icon"><img src="icon/sports.PNG"></i>
+                        <span class="title">스포츠</span>
+                    </a>
+                    <a href="#" class="menu1_game">
+                        <i class="icon"><img src="icon/game.PNG"></i>
+                        <span class="title">게임</span>
+                    </a>
+                    <a href="#" class="menu1_movie">
+                        <i class="icon"><img src="icon/movie.PNG"></i>
+                        <span class="title">영화</span>
+                    </a>
+                    <a href="#" class="menu1_news">
+                        <i class="icon"><img src="icon/news.PNG"></i>
+                        <span class="title">뉴스</span>
+                    </a>
+                    <a href="#" class="menu1_live">
+                        <i class="icon"><img src="icon/live.PNG"></i>
+                        <span class="title">실시간</span>
+                    </a>
+                    <a href="#" class="menu1_study">
+                        <i class="icon"><img src="icon/study.PNG"></i>
+                        <span class="title">학습</span>
+                    </a>
+                    <a href="#" class="menu1_VR">
+                        <i class="icon"><img src="icon/VR.PNG"></i>
+                        <span class="title">360° 동영상</span>
+                    </a>
+                </div>
             </div>
         </aside>
         <aside class="aside_menu2" id="menu2">
             <div class="content_menu">
                 <!-- 홈 메뉴-->
-                <a href="/" class="menu2_home">
+                <a href="#" class="menu2_home">
                     <i class="icon"><img src="icon/home.png"></i>
                     <span class="title" id="selected">홈</span>
                 </a>
                 <!-- 인기 메뉴-->
-                <a href="/" class="menu2_trnd">
+                <a href="#" class="menu2_trnd">
                     <i class="icon"><img src="icon/trend.png"></i>
                     <span class="title">인기</span>
                 </a>
                 <!-- 구독 메뉴-->
-                <a href="/" class="menu2_subc">
+                <a href="#" class="menu2_subc">
                     <i class="icon"><img src="icon/sub.png"></i>
                     <span class="title">구독</span>
                 </a>
                 <!-- 보관한 메뉴-->
-                <a href="/" class="menu2_libr">
+                <a href="#" class="menu2_libr">
                     <i class="icon"><img src="icon/lib.png"></i>
                     <span class="title">보관함</span>
                 </a>
                 <!-- 시청 기록 메뉴-->
-                <a href="/" class="menu2_hist">
+                <a href="#" class="menu2_hist">
                     <i class="icon"><img src="icon/his.png"></i>
                     <span class="title">시청 기록</span>
                 </a>
             </div>
         </aside>
         <section class="section_board">
-            <div class="page_manager">
+            <div class="page_manager" id="page_manager">
                 <div class="contents">
-                    <div class="media">
-                        <div></div>
-                    </div>
+                    <div class="media"></div>
                     <div class="media"></div>
                     <div class="media"></div>
                     <div class="media"></div>

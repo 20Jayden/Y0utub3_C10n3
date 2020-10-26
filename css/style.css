@@ -1,5 +1,10 @@
+body{
+    height: 100%;
+    background: #F4F4F4;
+}
 .wrap {
-    width: 100%;
+    width: 100vw;
+    height: 100%;
     margin: 0 auto;
 }
 button{
@@ -78,7 +83,7 @@ button{
 .right{
     margin: 6px 20px 0 0;
 }
-.right > button{
+.right > .login{
     border: 1px solid #065FD4;
     background-color: #FFFFFF;
     float:left;
@@ -87,7 +92,7 @@ button{
     height: 44px;
     cursor: pointer;
 }
-.right > button{
+.right > .login-button{
     display:flex;
     border: 1px solid #065FD4;
     background-color: #FFFFFF;
@@ -97,10 +102,26 @@ button{
     height: 44px;
     cursor: pointer;
 }
-.right > button > span {
+
+.right > .login-button > .login_img {
     background: url("../icon/login.png") no-repeat ;
+    background-size: 24px 24px;
     width: 30px;
     height: 30px;
+}
+
+.right > .border{
+    border: none;
+    background-color: #FFF;
+    float:left;
+    width: 40px;
+    height: 40px;
+    margin: 3px 10px 3px 3px;
+    cursor: pointer;
+}
+
+.right > .edit{
+    margin: 4px 16px 10px 2px;
 }
 
 .right > button > p {
@@ -112,7 +133,7 @@ button{
 
 .aside_menu1 {
     width: 240px;
-    height: 1000px;
+    height: 100%;
     background: #FFFFFF;
     position: fixed;
 }
@@ -123,8 +144,18 @@ button{
     flex-wrap:wrap;
     text-decoration: none;
 }
-.aside_menu1 .content_menu .content-menu1{
-    border-bottom: #666666;
+
+.aside_menu1 .content_menu .menu_border{
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 8px;
+
+}
+.aside_menu1 .content_menu .menu_border .menu1_subc{
+    margin-bottom: 8px;
+}
+
+.aside_menu1 .content_menu .menu_border .menu1_hist{
+    margin-bottom: 8px;
 }
 
 .aside_menu1 .content_menu a{
@@ -144,7 +175,7 @@ button{
 .aside_menu1 .content_menu span{
     line-height: 1.4rem;
     font-size: 0.87rem;
-    width:50px;
+    width:70px;
     display:flex;
     align-items: center;
     float:left;
@@ -183,6 +214,12 @@ button{
     width: 24px;
     height: 24px;
 }
+
+.trend_content .icon img{
+    width: 27px;
+    height: 27px;
+}
+
 .aside_menu2 .content_menu {
     margin-top: 56px;
     text-align: center;
@@ -190,17 +227,51 @@ button{
     flex-wrap:wrap;
     text-decoration: none;
 }
+
+.login_content > .login-button{
+    display:flex;
+    border: 1px solid #065FD4;
+    background-color: #FFFFFF;
+    float:left;
+    margin-top: 11px;
+    padding: 4px 10px 9px 13px;
+    width: 106px;
+    height: 34px;
+    cursor: pointer;
+}
+
+.login_content > .login-button > .login_img {
+    background: url("../icon/login.png") no-repeat ;
+    background-size: 24px 24px;
+    width: 30px;
+    height: 30px;
+}
+
+.login_content > button > p {
+    color: #065FD4;
+    margin: 1px 0 0 3px;
+    font-size: 0.95rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 #selected{
     color:#FF0000;
 }
 .aside_menu2 {
     background: #FFFFFF;
     width: 72px;
-    height: 1000px;
+    height: 100%;
     position: fixed;
 }
-.aside_menu2 .content_menu .icon{
-    
+
+.login_content{
+    display: inline-block;
+    padding: 16px 32px;
+    text-align: left;
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+    font-weight: lighter;
+    letter-spacing: 0.05rem;
 }
 
 #menu1{
@@ -213,12 +284,11 @@ button{
 .section_board {
     float: left;
     width: 100%;
-    height: 1000px;
-    background: #666666;
+    height: calc(100% - 56px);
+    margin-top: 56px;
 }
 .section_board .page_manager {
     margin-left: 265px;
-    margin-top: 55px;
 }
 .section_board .contents {
     overflow: hidden;
@@ -233,4 +303,16 @@ button{
     height: 285px;
     margin: 0 8px 40px;
     background-color: #444444;
+}
+
+
+.trend_content .trend_title{
+    padding: 8px 24px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.02rem;
+    text-transform: uppercase;
+    display:block;
+    text-align: left;
+    color:#404040;
 }

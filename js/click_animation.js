@@ -74,7 +74,7 @@ window["tmripple"] =
 // Default Settings
 var settings = {
     area: "",
-    color: "rgba(234, 234, 234, 3)",
+    color: "#DFDFDF",
     offsetEl: null,
     eventListener: "click",
     mouseMove: false
