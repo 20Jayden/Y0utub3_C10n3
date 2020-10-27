@@ -13,24 +13,24 @@ button{
 .header_nav {
     width: 100%;
     height: 56px;
+    padding:0 16px;
     position: fixed;
     z-index: 1;
     background: #ffffff;
     display:flex;
     justify-content: space-between;
+    align-items: center;
 }
 .header_nav .left{
-	float: left;
-	width: 200px;
-    margin: 10px 20px;
+	display:flex;
+    align-items: center;
 }
 
 .header_nav .left button{
-	float: left;
 	border: none;
 	width: 40px;
     height: 40px;
-    padding-bottom: 5px;
+    margin: 5px 0 0;
     cursor: pointer;
     background: none;
 }
@@ -39,49 +39,51 @@ button{
 	background: url("../icon/youtube_logo.png") no-repeat;
 	width: 100px;
 	height: 25px;   
-	margin: 4px 0 0 15px;
+	margin: 0 0 0 15px;
 }
 
 .center{
     flex:0 1 728px;
+    display:flex;
 }
 .center .form-item {
     height:27px;
     width: 100%;
-    margin-top: 11px;
+    align-items: center;
 }
 .center .form-item input[type="text"]{
     float:left; 
     width: 80%;
     height:100%;
     border: 1px solid #BBBBBB;
-    padding-left:5px;
+    
 }
 
 .center .form-item input[type="text"]:focus {
     outline:1px solid #065FD4;
 }
 
+
 .form-item > button {
-    float:left;
-    background: url("../icon/search_button.png") no-repeat 15px;
-    width: 50px;
-    height: 31px;
+    background: url("../icon/search_button.png") no-repeat 21px;
+    background-size: 20px 20px;
+    width: 65px;
+    height:31px;
     cursor: pointer;
     border: 1px solid #BBBBBB;
-    border-left: none;
-    background-color: #EAEAEA;
+    background-color: #F8F8F8;
 }
 
 .form-item > button:hover {
-    background: url("../icon/search_button_hover.png") no-repeat 15px;
-    background-color: #DFDFDF;
-    box-shadow: 0px 1px #BBBBBB;
+    background: url("../icon/search_button_hover.png") no-repeat 21px;
+    background-size: 20px 20px;
+    background-color: #F0F0F0;
+    box-shadow: 0px 1px #F0F0F0;
 }
 
 /* 로그인 버튼 CSS */
 .right{
-    margin: 6px 20px 0 0;
+    margin: 6px 30px 0 0;
 }
 .right > .login{
     border: 1px solid #065FD4;
@@ -161,6 +163,7 @@ button{
     display: flex;
     color: #333333;
     height: 40px;
+    width: 192px;
     padding: 0 24px 0 24px;
 }
 .aside_menu1 .content_menu .icon{
@@ -170,7 +173,7 @@ button{
 }
 .aside_menu1 .content_menu span{
     line-height: 1.4rem;
-    font-size: 0.87rem;
+    font-size: 0.93rem;
     display:flex;
     align-items: center;
 }
